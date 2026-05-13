@@ -1,0 +1,6 @@
+.cell {
+  padding: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: var(--font-size-base);
+}

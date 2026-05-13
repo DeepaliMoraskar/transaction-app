@@ -1,0 +1,144 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--color-border);
+}
+
+.tableContainer {
+  flex-shrink: 0;
+  border-bottom: 2px solid var(--color-border);
+  overflow: hidden;
+  width: 100%;
+  background: var(--color-surface-muted);
+}
+
+.tableContainer :global(table) {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* =========================
+   COLUMN WIDTHS
+========================= */
+
+.colCheck  { width: 8%; }
+.colId     { width: 22%; }
+.colAmount { width: 14%; }
+.colDate   { width: 22%; }
+.colStatus { width: 16%; }
+.colInvoice { width: 18%; }
+
+/* =========================
+   HEADER CELLS
+========================= */
+
+.thCheck   { text-align: center; }
+.thId      { text-align: left; padding-left: 1rem; }
+.thAmount  { text-align: left; }
+.thDate    { text-align: left; }
+.thStatus  { text-align: center; }
+.thInvoice { text-align: center; }
+
+/* Mirror cell padding so header aligns with rows */
+.thAmount :global(button) { padding-left:  0.75rem; }
+.thDate   :global(button) { padding-left:  1.5rem; }
+
+/* =========================
+   SELECT ALL CHECKBOX
+========================= */
+
+.selectAllCheckbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: var(--color-primary);
+}
+
+.selectAllCheckbox:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* =========================
+   SCROLL AREA
+========================= */
+
+.scrollArea {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.scrollArea::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollArea::-webkit-scrollbar-track {
+  background: var(--color-surface-muted);
+}
+
+.scrollArea::-webkit-scrollbar-thumb {
+  background: var(--color-slate-300);
+  border-radius: 4px;
+}
+
+.scrollArea::-webkit-scrollbar-thumb:hover {
+  background: var(--color-slate-400);
+}
+
+/* =========================
+   VIRTUAL ROW
+========================= */
+
+.virtualRow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.virtualTable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background: var(--color-surface);
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 300px;
+  color: var(--color-muted);
+}
+
+.emptyIcon {
+  color: var(--color-slate-300);
+}
+
+.emptyTitle {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.emptyHint {
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+  margin: 0;
+}

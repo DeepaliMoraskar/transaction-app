@@ -1,0 +1,25 @@
+.sortButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 1rem;
+  width: 100%;
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  color: var(--color-muted);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.sortButton.active {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.sortIcon {
+  opacity: 0.6;
+}

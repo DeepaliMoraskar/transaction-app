@@ -1,0 +1,4 @@
+.thead {
+  background: var(--color-surface-muted);
+  border-bottom: 1px solid var(--color-border);
+}
