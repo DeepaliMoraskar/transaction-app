@@ -69,7 +69,7 @@ src/features/transactions/
 ### Prerequisites
 
 - Node.js 20 or higher
-- npm or yarn
+- yarn
 
 ### Installation
 
@@ -79,13 +79,13 @@ git clone https://github.com/DeepaliMoraskar/transaction-app.git
 cd transaction-app
 
 # Install dependencies
-npm install
+yarn install
 ```
 
 ### Development
 
 ```bash
-npm run dev
+yarn run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser. The app auto-reloads on code changes.
@@ -93,14 +93,13 @@ Open [http://localhost:3000](http://localhost:3000) in your browser. The app aut
 ### Production Build
 
 ```bash
-npm run build
-npm start
+yarn run build
 ```
 
 ### Testing
 
 ```bash
-npm test
+yarn run test
 ```
 
 Runs all tests with Vitest. Tests include concurrency utility validation and component behavior.
@@ -108,7 +107,7 @@ Runs all tests with Vitest. Tests include concurrency utility validation and com
 ### Linting
 
 ```bash
-npm run lint
+yarn run lint
 ```
 
 ## Project Structure
@@ -166,7 +165,7 @@ Page (Server)
 - **Component Tests**: React Testing Library for interaction testing
 - **Integration**: Server-side data fetching validated with Zod
 
-Run tests with: `npm test`
+Run tests with: `yarn run test`
 
 ## Deployment
 
@@ -180,8 +179,7 @@ The project is configured for automatic deployment to **GitHub Pages** via GitHu
 ### Manual Deployment
 
 ```bash
-npm run build
-npm start
+yarn run build
 ```
 
 ## Performance Optimizations
